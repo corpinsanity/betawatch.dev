@@ -11,7 +11,7 @@
 <body>
     <header>
         <div id="Header">
-            <img id="ProfileIcon" src="Images/profile_ico.png">
+            <a href="login.aspx"><img id="ProfileIcon" src="Images/profile_ico.png"></a>
             <img id="BetaIcon" src="Images/beta_ico.png">
         </div>
     </header>
@@ -23,7 +23,7 @@
 
     <footer>
         <div id="Footer">
-            <p id="FooterText">This website uses the <a href="https://crackwatch.com" />Crackwatch API </p>
+            <p id="FooterText">This website uses the <a href="https://crackwatch.com" target="_blank" />Crackwatch API </p>
         </div>
     </footer>
 </body>

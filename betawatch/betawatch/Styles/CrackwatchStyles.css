@@ -1,5 +1,6 @@
 ﻿body {
     background-color: #333;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 #Header {
@@ -29,7 +30,8 @@
 #FooterText {
     color: azure;
     left: 44%;
-    text-align:center;
+    text-align: center;
+    font-size: 14px;
 }
 
 #Footer {

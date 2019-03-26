@@ -54,3 +54,6 @@ C:\Users\maxim\Documents\Projects\betawatch.dev\betawatch\betawatch\obj\Debug\be
 C:\Users\maxim\Documents\Projects\betawatch.dev\betawatch\betawatch\obj\Debug\betawatch.csproj.CopyComplete
 C:\Users\maxim\Documents\Projects\betawatch.dev\betawatch\betawatch\obj\Debug\betawatch.dll
 C:\Users\maxim\Documents\Projects\betawatch.dev\betawatch\betawatch\obj\Debug\betawatch.pdb
+C:\Users\maxim\Documents\Projects\betawatch.dev\betawatch\betawatch\bin\Newtonsoft.Json.dll
+C:\Users\maxim\Documents\Projects\betawatch.dev\betawatch\betawatch\bin\Newtonsoft.Json.pdb
+C:\Users\maxim\Documents\Projects\betawatch.dev\betawatch\betawatch\bin\Newtonsoft.Json.xml
