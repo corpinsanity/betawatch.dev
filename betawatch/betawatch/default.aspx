@@ -11,15 +11,19 @@
 <body>
     <header>
         <div id="Header">
-            <a href="login.aspx"><img id="ProfileIcon" src="Images/profile_ico.png"></a>
+            <a href="login.aspx">
+                <img id="ProfileIcon" src="Images/profile_ico.png"></a>
             <img id="BetaIcon" src="Images/beta_ico.png">
         </div>
     </header>
 
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
+    <asp:Table ID="GamesTable" runat="server" Width="100%">
+        <asp:TableRow ID="GameRow">
+            <asp:TableCell ID="NameCell">Name</asp:TableCell>
+            <asp:TableCell ID="ReleaseDateCell">Release Date</asp:TableCell>
+        </asp:TableRow>
+    </asp:Table>
+
 
     <footer>
         <div id="Footer">

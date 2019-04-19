@@ -6,6 +6,7 @@ using System.Net;
 using System.IO;
 using Newtonsoft.Json;
 using betawatch.Models;
+using System.Configuration;
 
 namespace betawatch.Classes
 {
@@ -13,7 +14,7 @@ namespace betawatch.Classes
     {
         public static List<Games.RootObject> Fetch_Games()
         {
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("https://api.crackwatch.com/api/games?sort_by=release_date&is_released=false&page=50");
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(ConfigurationManager.AppSettings["CrackWatchAPI"] + "sort_by=release_date&is_sort_inverted=true&is_released=false&page=0");
             request.AutomaticDecompression = DecompressionMethods.GZip;
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
@@ -22,6 +23,11 @@ namespace betawatch.Classes
                 plainJson = sr.ReadToEnd();
 
             return JsonConvert.DeserializeObject<List<Games.RootObject>>(plainJson);
+        }
+
+        public static void RefreshDatabase()
+        {
+
         }
     }
 }

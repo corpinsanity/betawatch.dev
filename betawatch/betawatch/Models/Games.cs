@@ -23,7 +23,7 @@ namespace betawatch.Models
             public DateTime releaseDate { get; set; }
             public string image { get; set; }
             public string imagePoster { get; set; }
-            public int steamPrice { get; set; }
+            public double steamPrice { get; set; }
             public string url { get; set; }
         }
     }

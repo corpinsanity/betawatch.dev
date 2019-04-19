@@ -18,7 +18,23 @@ namespace betawatch
             //Fetch a list of 50 unreleased games from crackwatch and deserialize them
             GamesList = CrackwatchFunctions.Fetch_Games();
 
+            foreach (var game in GamesList)
+            {
+                TableRow gameRow = new TableRow();
 
+                TableCell gameName = new TableCell();
+                TableCell releaseDate = new TableCell();
+
+                gameName.Text = game.title;
+                releaseDate.Text = game.releaseDate.ToString("yyyy-MM-dd");
+
+                gameRow.Cells.Add(gameName);
+
+                gameRow.Cells.Add(releaseDate);
+
+
+                GamesTable.Rows.Add(gameRow);
+            }
         }
 
     }
