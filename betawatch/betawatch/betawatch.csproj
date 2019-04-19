@@ -14,7 +14,7 @@
     <RootNamespace>betawatch</RootNamespace>
     <AssemblyName>betawatch</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -97,13 +97,15 @@
     <Content Include="Images\profile_ico.png" />
     <Content Include="login.aspx" />
     <Content Include="Styles\CrackwatchStyles.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\CrackwatchFunctions.cs" />
     <Compile Include="Classes\PushfleetFunctions.cs" />
     <Compile Include="DatabaseModel\BetaWatchModel.cs" />
-    <Compile Include="DatabaseModel\Games.cs" />
+    <Compile Include="DatabaseModel\Game.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -117,6 +119,14 @@
     <Compile Include="Migrations\201904191132243_initial setup.cs" />
     <Compile Include="Migrations\201904191132243_initial setup.Designer.cs">
       <DependentUpon>201904191132243_initial setup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904191330485_rename.cs" />
+    <Compile Include="Migrations\201904191330485_rename.Designer.cs">
+      <DependentUpon>201904191330485_rename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904191443081_quick fixes.cs" />
+    <Compile Include="Migrations\201904191443081_quick fixes.Designer.cs">
+      <DependentUpon>201904191443081_quick fixes.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Games.cs" />
@@ -149,6 +159,12 @@
     <EmbeddedResource Include="Migrations\201904191132243_initial setup.resx">
       <DependentUpon>201904191132243_initial setup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904191330485_rename.resx">
+      <DependentUpon>201904191330485_rename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904191443081_quick fixes.resx">
+      <DependentUpon>201904191443081_quick fixes.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -165,7 +181,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50584</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50584/</IISUrl>
+          <IISUrl>http://localhost/betawatch</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

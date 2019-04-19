@@ -16,7 +16,7 @@ namespace betawatch
         protected void Page_Load(object sender, EventArgs e)
         {
             //Fetch a list of 50 unreleased games from crackwatch and deserialize them
-            GamesList = CrackwatchFunctions.Fetch_Games();
+            GamesList = CrackwatchFunctions.Fetch_Games(0);
 
             foreach (var game in GamesList)
             {

@@ -75,3 +75,5 @@ C:\Users\maxim\Documents\Projects\betawatch.dev\betawatch\betawatch\bin\Hangfire
 C:\Users\maxim\Documents\Projects\betawatch.dev\betawatch\betawatch\bin\es\Hangfire.Core.resources.dll
 C:\Users\maxim\Documents\Projects\betawatch.dev\betawatch\betawatch\bin\zh\Hangfire.Core.resources.dll
 C:\Users\maxim\Documents\Projects\betawatch.dev\betawatch\betawatch\bin\zh-TW\Hangfire.Core.resources.dll
+C:\Users\maxim\Documents\Projects\betawatch.dev\betawatch\betawatch\obj\Debug\betawatch.Migrations.rename.resources
+C:\Users\maxim\Documents\Projects\betawatch.dev\betawatch\betawatch\obj\Debug\betawatch.Migrations.quickfixes.resources

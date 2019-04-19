@@ -29,7 +29,7 @@ namespace betawatch
             ///Start a job to update the database hourly
             RecurringJob.AddOrUpdate("RefreshDatabase", () => CrackwatchFunctions.RefreshDatabase(), Cron.Hourly);
 
-
+            RecurringJob.Trigger("RefreshDatabase");
         }
     }
 }

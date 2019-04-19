@@ -6,12 +6,13 @@ using System.Web;
 
 namespace betawatch.DatabaseModel
 {
-    public class Games
+    public class Game
     {
         [Key]
         public int Id { get; set; }
 
-        public int CrackWatchID { get; set; }
+        [MaxLength(500)]
+        public string CrackWatchID { get; set; }
 
         [MaxLength(500)]
         public string GameTitle { get; set; }

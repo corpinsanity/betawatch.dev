@@ -13,6 +13,6 @@ namespace betawatch.DatabaseModel
         {
         }
 
-        public DbSet<Games> Games { get; set; }
+        public DbSet<Game> Games { get; set; }
     }
 }
